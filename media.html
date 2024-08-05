@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            display: flex;
+        }
+        .abc img{
+            width:800px;
+        }
+
+        @media(max-width:768px){
+            .abc{
+                display: block;
+            }
+
+            .abc img{
+                width:100%;
+                height:auto;
+            }
+
+            h1{
+                color:rgb(231, 241, 30);
+                background-color: blue;
+            }
+
+            p{
+                font-size:40px;
+                color: aqua;
+                background-color: black;
+            }
+
+        }
+
+
+
+
+        @media(min-width:1024px){
+            h1{
+                color: green;
+            }
+            p{
+                font-size:20px;
+                color: blue;
+            }
+        }
+
+
+        @media(min-width:768px) and (max-width:1023px){
+            h1{
+                color: red;
+                background-color: black;
+            }
+            p{
+                background-color: grey;
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+<center>    <h1>this is how we can use the media query</h1></center>
+
+<div class="abc">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus unde iusto, consequuntur alias nihil cumque temporibus dignissimos eos quae ipsam animi reprehenderit, quisquam corporis veritatis quo qui pariatur vero.</p>
+<img src="https://images.unsplash.com/photo-1722677543723-cde825c7bac5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+</div>
+</body>
+</html>
