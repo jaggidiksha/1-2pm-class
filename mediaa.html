@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.abc{
+    display: flex;
+}
+@media(max-width:768px){
+
+    .abc{
+        display: block;
+    }
+    .abc img{
+        width:100%;
+        height:auto;
+    }
+
+    h1{
+        color:red;
+    }
+
+    p{
+        color:blue;
+        font-size: 30px;
+    }
+}
+
+
+@media(min-width:1024px){
+    h1{
+        color:yellow;
+        background-color: grey;
+    }
+
+    p{
+        color: aquamarine;
+        background-color: blueviolet;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1023px){
+
+    p{
+        color: rgb(247, 100, 9);
+        background-color: blue;
+        font-size: 20px;
+    }
+
+    h1{
+        background-color: black;
+        color: red;
+    }
+}
+    </style>
+</head>
+<body>
+
+<center>
+    <h1>this is media query in html</h1>
+</center>
+<div class="abc">
+    <img src="https://images.unsplash.com/photo-1719937206642-ca0cd57198cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt cupiditate sapiente explicabo fugit eos necessitatibus aliquid rerum minima in ducimus iusto, earum sed quia molestiae neque eius molestias vero!</p>
+</div>
+
+    <!--
+    
+    media query:
+
+    mobile screen: max-width:768px
+
+    laptop screen : min-width:1024px
+
+
+    tablet screen  min-width:768px  max-width:1023px
+    
+    
+
+    @media 
+    -->
+    
+</body>
+</html>
