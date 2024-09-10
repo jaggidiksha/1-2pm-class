@@ -116,6 +116,110 @@
 // }
 
 
+// let output="";
+// let  num=1;
+
+// for (let i=1;i<=4;i++){
+//     for (let j=1 ;j<=i;j++){
+//         output+=num;
+//         num++
+//     }
+//     output+="<br>"
+// }
+
+
+// document.write(output)
+
+for (let i=1;i<=5;i++){
+    document.write(i)
+for (let j=1;j<=2;j++){
+    document.write("john"+"<br>")
+}
+}
+
+//4X1=4
+//4X2=8
+// ------
+//4X10=40 
+
+
+// for (let i=1;i<=10;i++){
+// b=4*i
+// document.write("4X"+i+"="+b+"<br>")
+// }
+
+//for in 
+//for of
+//forEach
+
+//iterable objects : on which the loop can work : eg :array , strings, objects
+//non-iterable objects : on which the loop doesnot work
+//eg : boolean , interger
+
+// for -in : it iterate over the objects 
+
+//syntax: for (varible in object){
+//code block to be executed
+// }
+
+
+const obj={
+    name:"john",
+    age:34,
+    occupation:"developer"
+}
+//to access the keys
+// for (let key in obj){
+//     console.log(key)
+// } 
+
+//to access the values 
+// for (let key in obj){
+//     console.log(obj[key])
+// }
+
+// to access both keys and values
+
+// for (let key in obj){
+//     console.log(key , obj[key])
+// }
+
+// const arr=[89,78,56,34,77]
+// for (let x in arr){
+//     console.log(x)
+// }
+
+// for (let x in arr){
+//     console.log(arr[x])
+// }
+// for (let x in arr){
+//     console.log(x,arr[x])
+// }
+
+//for -of: it iterate overthe values of iterable objects
+//syntax:
+//for (variable of object){
+// statement
+//}
+
+// const ary=[89,67,45,34,90]
+// for (let y of ary){
+//     console.log(y)
+// }
+
+// let str="car , bus, train"
+// for (let y of str){
+//     console.log(y)
+// }
+
+
+//forEach: it is used to perform opeartion on each element of an array 
+const ar=[2,3,4,5]
+
+ar.forEach(function(x){
+console.log(x*2)
+})
+
     </script>
     
 </body>
