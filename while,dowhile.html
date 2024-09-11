@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // function abc(abcd) {
+        //     string = ""
+        //     for (let x in abcd) {
+        //         if (typeof abcd[x] === "string")
+        //             string += abcd[x]
+        //     }
+        //     return string
+        // }
+        // const obj = {
+        //     name: "john",
+        //     age: 56,
+        //     occupation: "developer"
+        // }
+        // console.log(abc(obj))
+
+
+
+
+    //     function abc(obj) {
+    //         sum = 0;
+    //         for (let key in obj) {
+    //             if (typeof obj[key] === "number") {
+    //                 sum += obj[key]
+    //             }
+    //         }
+    //         return sum
+    //     }
+    //     const grocery = {
+    //         onion: 80,
+    //         potato: 90,
+    //         tomato: 50
+    //     }
+    //    console.log( abc(grocery))
+
+
+
+    //while loop:
+    //syntax: 
+
+    //variable initalization
+    //while(condition){
+    //statement
+    //increment/decrement
+    // }
+
+
+    // 1000 hello 
+//     let i=1;
+//    while (i<=1000){
+//     console.log("hello")
+//     i++
+//    }
+
+//do -while loop 
+//syntax :
+//variable initialization
+//do {
+//statement
+//increment/decrement
+// }
+//while(condition)
+
+// let i=11;
+// do{
+//     console.log("hello")
+//     i++
+// }
+// while(i<=10)
+// alert("hii")
+
+//prompt : data enter option , two buttons  , ok , cancel 
+// let name=prompt("enter your name");
+// document.write(name)
+//confirm : two buuton , ok , cancel 
+
+
+// let data=confirm("are you 18+? ")
+// document.write(data)
+
+//scoping :
+//global scoping:
+//variable declared outside the function are called global variables and the concept  is called global scoping , the global variables can be accessed locally as well 
+
+var a="john";
+
+//local scoping:
+//variable declared inside the function are called local variables and the concept is called  local scoping , local variable can not be accessed globally
+
+
+function abc(){
+var b="eric"
+document.write(a)
+document.write(b)
+}
+abc()
+
+
+//lexical scoping /clousres: es6 , 
+// arrow functions :
+
+//syntax:
+// const functioname=()=>{
+//     //statement
+// }
+// functioname()
+
+
+//lexical scoping : closures in action ssya that there will be two functions , one is outerfunctiona na dthe other one is innerfunction , the inerfunction can have the access to the outerfunction variables as wll as parameters
+
+
+// const ouetfun=(a)=>{
+// var b=90
+// const innerfun=()=>{
+
+//     let sum=a+b
+// console.log(`the sum of two numbers is ${sum} `)
+// }
+// innerfun()
+
+// }
+// ouetfun(10)
+
+
+
+
+//the sum of two numbers is 100
+//the sum of two numbers is : string 
+//100 : expression: sum
+//string+expressison : template literals / backticks 
+//expression: ${expressionname} : string interpolation
+
+
+//prompt a user to enter a number greater than 10 using do while loop
+
+    </script>
+
+</body>
+
+</html>
