@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>STUDENT FORM</h1>
+        <form id="studentform">
+            <label>Name</label>
+            <input type="text" id="name"><br><br>
+            <label>Email</label>
+            <input type="email" id="Email"><br><br>
+            <label>Roll no</label>
+            <input type="text" id="rollno"><br><br>
+            <label>address</label>
+            <input type="text" id="address"><br><br>
+            <label>Mobile no</label>
+            <input type="text" id="mobile"><br><br>
+            <label>Father's name</label>
+            <input type="text" id="father"><br><br>
+            <label>Mother's name</label>
+            <input type="text" id="mother"><br><br>
+        <input type="submit">
+        </form>
+    </div>
+    <script>
+
+     let form=   document.getElementById("studentform")
+    form.addEventListener("submit",function(e){
+        e.preventDefault()
+        let name = document.getElementById("name").value;
+        let email=document.getElementById("Email").value;
+        let rollno=document.getElementById("rollno").value
+        let address=document.getElementById("address").value
+        let mobile=document.getElementById("mobile").value
+        let father=document.getElementById("father").value
+        let mother=document.getElementById("mother").value
+
+        console.log("name:",name)
+        console.log("email:",email)
+        console.log("rollno:",rollno)
+        console.log("address:",address)
+        console.log("mobileno:",mobile)
+        console.log("fathermame:",father)
+        console.log("mothermame:",mother)
+    })
+
+    </script>
+    
+</body>
+</html>
