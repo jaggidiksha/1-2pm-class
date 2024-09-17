@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>TO-DO LIST</h1>
+    <input type="text" placeholder="enter your to-do" id="myinput">
+    <button onclick="newelement()">Add</button>
+    <ul id="data">
+
+    </ul>
+
+    <script>
+        //createElement
+        //createTextNode
+        // appendChild
+
+
+        function newelement() {
+            let inputvalue = document.getElementById("myinput").value
+
+            if (inputvalue === "") {
+                alert("provide a to-do first")
+            }
+
+            li = document.createElement("li")
+            textnode = document.createTextNode(inputvalue)
+            li.appendChild(textnode)
+
+
+            editbtn = document.createElement("button")
+            editbtn.appendChild(document.createTextNode("edit"))
+            editbtn.onclick = function () {
+                newtask = prompt("enter the modified to-do")
+                if (newtask !== null && newtask !== "") {
+                    textnode.nodeValue = newtask
+                }
+
+            }
+            li.appendChild(editbtn)
+
+
+
+            dltbtn = document.createElement("button")
+            dltbtn.appendChild(document.createTextNode("delete"))
+            dltbtn.onclick = function () {
+                let listitems = this.parentElement
+                listitems.remove()
+
+            }
+
+            li.appendChild(dltbtn)
+
+
+            document.getElementById("data").appendChild(li)
+
+        }
+    </script>
+</body>
+
+</html>

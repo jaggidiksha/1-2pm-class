@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>FRUITS
+        <li class="list-item">Apple</li>
+        <li class="list-item">Pineapple</li>
+        <li class="list-item">orange</li>
+        <li class="list-item">mango</li>
+        <li class="list-item">banana</li>
+    </ul>
+    <script>
+
+       let items= document.getElementsByClassName("list-item")
+       console.log(items[1])
+       items[1].textContent="guava";
+       items[3].style.color="green"
+       items[3].style.backgroundColor="yellow"
+        // document.getElementsByClassName
+        // document.getElementById
+        // document.getElementsByTagName
+       let abc= document.getElementsByTagName("li")
+       abc[2].style.backgroundColor="orange"
+
+
+       //createElement
+       //createTextNode
+       //appendChild
+    </script>
+</body>
+</html>
