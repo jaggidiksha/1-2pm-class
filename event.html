@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hii")
+        setTimeout(function timeout(){
+            console.log("hello")
+        },2000)
+        console.log("heyy")
+        // event loop pushes tasks from task queue to call stack, asynchronously, non-blocking behavior wise and single threadedly 
+        // task-queue : alignment of tasks in a particuler order
+        // call stack:used for memory allocation
+
+      let d=  new Date();
+      document.write(d+"<br>")
+      document.write(d.getHours()+"<br>"+d.getMinutes()+"<br>"+d.getSeconds()+"<br>"+d.getMonth())
+    </script>
+    
+</body>
+</html>
