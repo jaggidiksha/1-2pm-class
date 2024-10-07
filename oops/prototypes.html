@@ -30,13 +30,47 @@
     //    document.write(emp.id,emp.name,emp.salary)
 
 
-    function abc(id,name,salary){
-  this.id=id,
-  this.name=name,
-  this.salary=salary
-    }
-let e=new abc(101,"john",90000)
-document.write(e.id," ",e.name," ",e.salary)
+    //function abc(id,name,salary){
+//   this.id=id,
+//   this.name=name,
+//   this.salary=salary
+//     }
+// let e=new abc(101,"john",90000)
+// document.write(e.id," ",e.name," ",e.salary)
+
+// prototypes:in js every object has an internal property called prototypes, which is a reference to the other object 
+
+//prototypal inheritance : when the object in js inherit the properties from a prototypal inheritance 
+
+// linking a prototypal object to a simple object 
+
+
+// define prototypal object 
+
+const aa={
+     greet:function(){
+        console.log(` hello ${this.name}`)
+     }
+}
+
+// object
+
+let a=Object.create(aa)
+a.name="eric"
+let b=a.greet()
+console.log(b)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </script>
