@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div style="text-align: center;">
+    <h1>STUDENT FORM</h1>
+    <form id="myform" onsubmit="return validation()">
+        <label>NAME</label>
+        <input type="text" id="name">
+        <span id="user" style="color: red;"></span><br><br>
+        <input type="submit">
+    </form>
+
+   </div>
+   <script>
+    function validation(){
+     let user=document.getElementById("name").value
+if(user==""){
+    document.getElementById("user").innerHTML="please fill the user name first"
+    return false;
+}
+
+if(user.length<5 || user.length>20){
+    document.getElementById("user").innerHTML="** user length must be between 5 to 20 **";
+    return false;
+}
+
+if(!isNaN(user)){
+    document.getElementById("user").innerHTML="** only characters are allowed**"
+    return false;
+}
+
+
+    }
+   </script>
+    
+</body>
+</html>

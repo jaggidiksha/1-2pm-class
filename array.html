@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // array: array can store multiple elements inside it , array can have heterogeneous dataset inside it , array is a special kind of object,array is always zero indexed 
+
+        // array can be created in two ways 
+
+        // Array literal 
+        // Array constructor 
+
+        // array literal 
+        // const ary = ["car", 9, "train", 90, "bus"]
+        // console.log(ary)
+
+
+        // // array constructor 
+        // const arr = new Array(12, 23, 67, 89, "bike")
+        // console.log(arr)
+
+        // const ar = Array(78, 79, 5)
+        // console.log(ar)
+
+
+    //  indexing
+        // const ary=["car","bike","bus","train","plane"]
+        // console.log(ary[3])
+        // ary[3]="ship"
+        // console.log(ary)
+
+
+        // to add element at the end of an array
+        // const ary=["car","bike","bus","train","plane"]
+        // ary.push("ship")
+        // console.log(ary)
+
+
+        // to add element at the start of an array 
+        // const ary=["car","bike","bus","train","plane"]
+        // ary.unshift("ship")
+        // console.log(ary)
+
+        // to remove the element from the end
+        // const ary=["car","bike","bus","train","plane"]
+        // ary.pop()
+        // ary.pop()
+        // console.log(ary)
+
+        // to remove the element from start
+        // const ary=["car","bike","bus","train","plane"]
+        // ary.shift()
+        // console.log(ary)
+
+        // to check the length of the array
+    //     const ary=["car","bike","bus","train","plane"]
+    // console.log(ary.length)
+
+
+    // to check the index of particular element
+    // const ary=["car","bike","bus","train","plane"]
+    // console.log(ary.indexOf("bike"))
+
+    // to blank the whole array
+    // const ary=["car","bike","bus","train","plane"]
+    // ary.length=0
+    // console.log(ary)
+
+    // splice
+    // const ary=["car","bike","bus","train","plane"]
+    // ary.splice(1,2,"ship")//ship will be added at index value 1 and two elements will be removed after it 
+    // console.log(ary)
+
+
+    // const ar=[2,3,4,5,6]
+    // ar.splice(2,1,"diksha")//diksha will add at index value 2 and no element will be removed
+    // console.log(ar)
+
+    // const a=["car","bike","train","plane","auto"]
+    // a.splice(3,2,"ship")
+    // console.log(a)
+
+    // slice: it returns the shallow  copy of an array
+    // const aa=[2,3,4,5,6,7,8]
+    // console.log(aa)
+    // const b=aa.slice()
+    // console.log(b)
+
+//   const b=aa.slice(2)
+// console.log(b)
+
+// const b=aa.slice(1,5)
+// console.log(b)
+
+
+// const b=aa.slice(-3)
+// console.log(b)
+
+
+
+const ary=[12,3,45,667,65432,98,23,122]
+// console.log(ary)
+let  max=ary[0]
+for (let i=1;i<ary.length;i++){
+    if(ary[i]>max){
+        max=ary[i]
+    }
+}
+console.log("the largest element inside the ary is ",max)
+
+    </script>
+</body>
+
+</html>
