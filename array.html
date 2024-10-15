@@ -104,15 +104,31 @@
 
 
 
-const ary=[12,3,45,667,65432,98,23,122]
-// console.log(ary)
-let  max=ary[0]
-for (let i=1;i<ary.length;i++){
-    if(ary[i]>max){
-        max=ary[i]
-    }
+// const ary=[12,3,45,667,65432,98,23,122]
+// // console.log(ary)
+// let  max=ary[0]
+// for (let i=1;i<ary.length;i++){
+//     if(ary[i]>max){
+//         max=ary[i]
+//     }
+// }
+//console.log("the largest element inside the ary is ",max)
+
+
+let zx=["this is a car"]
+zx=zx[0]
+st=""
+output=[]
+for (let i=0;i<zx.length;i++){
+if(zx[i]===" "){
+    output.push(st)
+    st=""
+}else{
+    st=st+zx[i]
 }
-console.log("the largest element inside the ary is ",max)
+}
+output.push(st)
+console.log(output)
 
     </script>
 </body>
